@@ -87,7 +87,7 @@ export const resumeData = {
   projects: [
     {
       name: "Full Stack Developer (React) - Resume (Source files)",
-      description: "Developed a web application using React.",
+      description: "Developed a web application (resume) using React.",
       link: "https://github.com/Denis-Yorsh/resume-react",
     },
     {

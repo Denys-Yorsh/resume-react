@@ -102,18 +102,25 @@
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem; /* Reduced from 2rem */
 }
 
 @media (max-width: 900px) {
   .main-grid {
     grid-template-columns: 1fr;
+    margin-bottom: 0.5rem;
   }
 }
 
 /* Sections */
 .section-block {
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem; /* Reduced from 2rem */
+}
+
+/* Override global container padding for tighter sections */
+.container {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
 .section-title {
