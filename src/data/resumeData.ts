@@ -8,7 +8,7 @@ export const resumeData = {
     location: "Ukraine",
     linkedin: "linkedin.com/in/denis-yorsh",
     github: "github.com/denis-yorsh",
-    signal: "signal.me/#eu/denis_yorsh.99"
+    signal: "signal.me/#eu/denys_yorsh.99"
   },
 
   summary: `I am a practicing fullstack developer with experience across a wide range of technologies. I work with React, Angular, JavaScript, Node.js, and Vite, and also have experience with C++, Java, Python, Swift, and Kotlin, among others.
@@ -97,32 +97,32 @@ export const resumeData = {
     {
       name: "Full Stack Developer (React) - Resume (Source files)",
       description: "Developed a web application (resume) using React.",
-      link: "https://github.com/Denis-Yorsh/resume-react",
+      link: "https://github.com/Denys-Yorsh/resume-react",
     },
     {
       name: "Duty Schedule (C++)",
       description: "Developed a C++ application for automating the creation and management of duty schedules in a military unit of the Armed Forces of Ukraine (AFU).",
-      link: "https://github.com/Denis-Yorsh/duty-manager",
+      link: "https://github.com/Denys-Yorsh/duty-manager",
     },
     {
       name: "Weather App (React)",
       description: "A small web application for viewing weather built with React, using an API to retrieve real-time data.",
-      link: "https://github.com/Denis-Yorsh/weather-app",
+      link: "https://github.com/Denys-Yorsh/weather-app",
     },
     {
       name: "Currency converter (Angular)",
       description: "An app for converting currencies using the NBU exchange rate in real time, without any extra buttons.",
-      link: "https://github.com/Denis-Yorsh/currency-converter-angular",
+      link: "https://github.com/Denys-Yorsh/currency-converter-angular",
     },
     {
       name: "Adaptive resume",
       description: "Source code of the resume page using modern layout techniques.",
-      link: "https://denis-yorsh.github.io/resume-adaptic-page/",
+      link: "https://denys-yorsh.github.io/resume-adaptic-page/",
     },
     {
       name: "Diploma project (Spring Boot)",
       description: "A comprehensive server-side application built on Java Spring Boot, demonstrating database and business logic skills.",
-      link: "https://github.com/Denis-Yorsh/diploma-itstep",
+      link: "https://github.com/Denys-Yorsh/diploma-itstep",
     },
   ],
   codeSamples: [
