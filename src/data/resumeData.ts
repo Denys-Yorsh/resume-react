@@ -32,7 +32,7 @@ export const resumeData = {
         { name: "Java / Spring Boot", level: 85 },
         { name: "Node.js / Nest.js / Express.js", level: 80 },
         { name: "C / C++ / Qt", level: 80 },
-        { name: "C# / WPF / Avalonia", level: 75 },
+        { name: "C# (.NET) / WPF / Avalonia", level: 75 },
         { name: "Python / PHP", level: 75 },
         { name: "SQL / JPQL / NoSQL", level: 85 },
         { name: "REST API / Hibernate / JPA", level: 85 },
