@@ -22,26 +22,26 @@ export const resumeData = {
       skills: [
         { name: "React / Angular / Vue", level: 90 },
         { name: "TypeScript / JavaScript", level: 95 },
-        { name: "HTML5 / CSS3 / PUG", level: 95 },
-        { name: "Tailwind / SASS / Bootstrap", level: 90 }
+        { name: "HTML5 / CSS3 / SASS", level: 95 },
+        { name: "Tailwind / Bootstrap", level: 90 }
       ]
     },
     {
       title: "Back-End",
       skills: [
         { name: "Java / Spring Boot", level: 85 },
+        { name: "REST API / Hibernate / JPA", level: 85 },
         { name: "Node.js / Nest.js / Express.js", level: 80 },
-        { name: "C / C++ / Qt", level: 80 },
-        { name: "C# (.NET) / WPF / Avalonia", level: 75 },
         { name: "Python / PHP", level: 75 },
         { name: "SQL / JPQL / NoSQL", level: 85 },
-        { name: "REST API / Hibernate / JPA", level: 85 },
         { name: "OOP / SOLID / ACID", level: 85 }
       ]
     },
     {
-      title: "Mobile",
+      title: "Desktop & Mobile",
       skills: [
+        { name: "C / C++ / Qt", level: 80 },
+        { name: "C# (.NET) / WPF / Avalonia", level: 75 },
         { name: "Swift / UIKit / SwiftUI", level: 70 },
         { name: "Kotlin / Jetpack Compose", level: 65 },
         { name: "Mobile Design Patterns", level: 75 }
