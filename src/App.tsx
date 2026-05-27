@@ -4,7 +4,7 @@ import { useScrollReveal } from './hooks/useScrollReveal';
 import {
   Mail, MapPin, Linkedin, Github,
   Sun, Moon, Download, Briefcase, GraduationCap,
-  ExternalLink, Wrench, Smartphone, Server, Layers, X
+  ExternalLink, Wrench, Smartphone, Server, Layers, X, Monitor
 } from 'lucide-react';
 import './App.css';
 
@@ -38,11 +38,16 @@ function App() {
     window.print();
   };
 
+  /**
+   * Повертає відповідну іконку для категорії навичок на основі її назви
+   * @param title - Назва категорії
+   */
   const getIcon = (title: string) => {
     switch (title.toLowerCase()) {
       case 'front-end': return <Layers size={18} />;
       case 'back-end': return <Server size={18} />;
       case 'mobile': return <Smartphone size={18} />;
+      case 'desktop & mobile': return <Monitor size={18} />;
       default: return <Wrench size={18} />;
     }
   };
