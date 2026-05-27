@@ -1,7 +1,11 @@
+/**
+ * Дані для резюме: контакти, навички, досвід роботи, освіта та проекти.
+ */
 export const resumeData = {
   name: "Denys Yorsh",
   role: "Full Stack Developer",
   photo: "/image_me.jpeg",
+  /* Контактна інформація */
   contact: {
     email: "denis_my_mail@yahoo.com",
     phone: "",
@@ -11,11 +15,14 @@ export const resumeData = {
     signal: "signal.me/#eu/denys_yorsh.99"
   },
 
+  /* Коротке резюме про розробника */
   summary: `I am a practicing fullstack developer with experience across a wide range of technologies. I work with React, Angular, JavaScript, Node.js, and Vite, and also have experience with C++, Java, Python, Swift, and Kotlin, among others.
 
   I understand the full software development lifecycle, from building user interfaces and backend logic to working with algorithms and cross-platform solutions. I am experienced with Git, application architecture, and delivering complete working projects.
 
   I focus on clean code, performance, and practical implementation of real-world solutions.`,
+
+  /* Категорії навичок */
   skillCategories: [
     {
       title: "Front-End",
@@ -60,6 +67,7 @@ export const resumeData = {
       ]
     }
   ],
+  /* Досвід роботи */
   experience: [
     {
       company: "Armed Forces of Ukraine (Military Unit A5006)",
@@ -80,6 +88,8 @@ export const resumeData = {
       description: "Application development using a modern technology stack. Database management, REST API design, and responsive interface development.",
     }
   ],
+  
+  /* Освіта та сертифікати */
   education: [
     {
       school: "Corsera",
@@ -106,6 +116,8 @@ export const resumeData = {
       period: "2004 - 2009",
     },
   ],
+  
+  /* Список проектів */
   projects: [
     {
       name: "Full Stack Developer (React) - Resume (Source files)",
@@ -138,6 +150,8 @@ export const resumeData = {
       link: "https://github.com/Denys-Yorsh/diploma-itstep",
     },
   ],
+  
+  /* Приклади коду (пасхалки) */
   codeSamples: [
     {
       title: "Custom C++ Easter Egg",

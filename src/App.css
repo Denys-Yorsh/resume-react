@@ -1,10 +1,11 @@
+/* Головний контейнер додатка */
 .app-container {
   min-height: 100vh;
   padding-top: 4rem;
   padding-bottom: 3rem;
 }
 
-/* Floating Controls */
+/* Плаваючі елементи керування (тема, друк) */
 .controls {
   position: fixed;
   top: 1.5rem;
@@ -14,6 +15,7 @@
   z-index: 100;
 }
 
+/* Кнопка-іконка з ефектом скла */
 .icon-btn {
   background: var(--glass);
   backdrop-filter: blur(8px);
@@ -35,7 +37,7 @@
   border-color: var(--accent);
 }
 
-/* Hero Section */
+/* Секція Hero (Шапка профілю) */
 .hero {
   margin-bottom: 3rem;
 }
@@ -48,6 +50,7 @@
   text-align: left;
 }
 
+/* Контейнер для фото профілю */
 .hero-photo-container {
   position: relative;
   width: 360px;
@@ -97,12 +100,12 @@
   letter-spacing: 0.1em;
 }
 
-/* Main Grid Layout */
+/* Основна сітка макета (Sidebar + Content) */
 .main-grid {
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: 3rem;
-  margin-bottom: 0.5rem; /* Reduced from 2rem */
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 900px) {
@@ -112,17 +115,18 @@
   }
 }
 
-/* Sections */
+/* Стилі для блоків секцій */
 .section-block {
-  margin-bottom: 0.5rem; /* Reduced from 2rem */
+  margin-bottom: 0.5rem;
 }
 
-/* Override global container padding for tighter sections */
+/* Перевизначення відступів контейнера для щільного компонування */
 .container {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
 }
 
+/* Заголовки секцій з іконками */
 .section-title {
   display: flex;
   align-items: center;
@@ -132,7 +136,7 @@
   color: var(--accent);
 }
 
-/* Glass Cards - RESTORED */
+/* Картки з ефектом матового скла (Glassmorphism) */
 .glass-card {
   background: var(--glass);
   backdrop-filter: blur(12px);
@@ -147,14 +151,14 @@
   transform: translateY(-2px);
 }
 
-/* Sidebar */
+/* Бокова панель (Sidebar) */
 .sidebar {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-/* Sidebar Contacts */
+/* Список контактів у сайдбарі */
 .contact-list {
   list-style: none;
 }
@@ -175,7 +179,7 @@
   color: var(--text-secondary);
 }
 
-/* Skills Grid (4 Columns) */
+/* Сітка навичок (4 колонки) */
 .skills-grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -219,6 +223,7 @@
   font-size: 0.75rem;
 }
 
+/* Смуги прогресу навичок */
 .skill-bar {
   height: 5px;
   background: var(--bg-primary);
@@ -249,7 +254,7 @@
   }
 }
 
-/* Timeline Experience */
+/* Часова шкала досвіду роботи (Timeline) */
 .timeline {
   position: relative;
   padding-left: 2rem;
@@ -314,6 +319,7 @@
   margin-top: auto;
 }
 
+/* Кнопки дій (Сертифікати тощо) */
 .action-btn {
   background: var(--bg-primary);
   border: 1px solid var(--border);
@@ -342,7 +348,7 @@
   transform: translateY(0);
 }
 
-/* Certificate Modal */
+/* Модальне вікно перегляду сертифіката */
 .certificate-modal {
   position: fixed;
   inset: 0;
@@ -367,6 +373,7 @@
   animation: zoomIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
+/* Кнопка закриття модального вікна */
 .close-modal {
   position: absolute;
   top: -1.5rem;
@@ -396,6 +403,7 @@
   border-radius: 0.5rem;
 }
 
+/* Анімації */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -406,7 +414,7 @@
   to { opacity: 1; transform: scale(1); }
 }
 
-/* Signature Grid */
+/* Сітка прикладів коду (Signature Grid) */
 .signature-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -418,9 +426,10 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-  container-type: inline-size; /* Enable container queries */
+  container-type: inline-size;
 }
 
+/* Контейнер для відображення коду */
 .code-container {
   margin-top: 1rem;
   padding: 1.25rem;
@@ -456,7 +465,7 @@
   }
 }
 
-/* Projects Grid (3 Columns) */
+/* Сітка проектів (3 колонки) */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -494,7 +503,7 @@
   letter-spacing: 0.05em;
 }
 
-/* Footer */
+/* Футер сторінки */
 footer {
   text-align: center;
   margin-top: 3rem;

@@ -8,7 +8,10 @@ import {
 } from 'lucide-react';
 import './App.css';
 
-// Custom Signal Brand Icon
+/**
+ * Іконка бренду Signal (SVG)
+ * @param size - Розмір іконки в пікселях
+ */
 const SignalIcon = ({ size = 16 }: { size?: number }) => (
   <svg
     width={size}
@@ -21,19 +24,33 @@ const SignalIcon = ({ size = 16 }: { size?: number }) => (
   </svg>
 );
 
+/**
+ * Головний компонент програми Резюме
+ */
 function App() {
+  /* Стан для керування темою оформлення (світла/темна) */
   const [theme, setTheme] = useState('dark');
+  /* Стан для відображення модального вікна з сертифікатом */
   const [activeCertificate, setActiveCertificate] = useState<string | null>(null);
+  
+  /* Підключення хука для анімації появи елементів при прокрутці */
   useScrollReveal();
 
+  /* Ефект для оновлення атрибута теми в кореневому елементі */
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
+  /**
+   * Перемикає тему оформлення між світлою та темною
+   */
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
+  /**
+   * Відкриває діалогове вікно друку сторінки
+   */
   const handlePrint = () => {
     window.print();
   };
@@ -55,7 +72,7 @@ function App() {
 
   return (
     <div className="app-container">
-      {/* Certificate Modal */}
+      {/* Модальне вікно перегляду сертифіката */}
       {activeCertificate && (
         <div className="certificate-modal no-print" onClick={() => setActiveCertificate(null)}>
           <div className="certificate-content" onClick={(e) => e.stopPropagation()}>
@@ -71,7 +88,7 @@ function App() {
         </div>
       )}
 
-      {/* Floating Controls */}
+      {/* Плаваючі елементи керування (тема, друк) */}
       <div className="controls no-print">
         <button onClick={toggleTheme} className="icon-btn" aria-label="Toggle Theme">
           {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
@@ -81,6 +98,7 @@ function App() {
         </button>
       </div>
 
+      {/* Шапка профілю (Hero section) */}
       <header className="hero fade-in">
         <div className="hero-content container">
           {resumeData.photo && (
@@ -95,8 +113,9 @@ function App() {
         </div>
       </header>
 
+      {/* Основна сітка контенту */}
       <main className="main-grid container">
-        {/* Sidebar */}
+        {/* Бокова панель (Контакти та Про себе) */}
         <aside className="sidebar fade-in">
           <section className="glass-card">
             <h3>Contacts</h3>
@@ -119,9 +138,9 @@ function App() {
           </section>
         </aside>
 
-        {/* Main Content */}
+        {/* Основна область контенту (Навички та Досвід) */}
         <div className="content-area">
-          {/* Skills Section - 4 COLUMNS */}
+          {/* Секція навичок (4 колонки) */}
           <section className="fade-in section-block">
             <h2 className="section-title"><Wrench size={24} /> Skills</h2>
             <div className="skills-grid-4">
@@ -152,6 +171,7 @@ function App() {
             </div>
           </section>
 
+          {/* Секція досвіду роботи (Timeline) */}
           <section className="fade-in section-block">
             <h2 className="section-title"><Briefcase size={24} /> Work Experience</h2>
             <div className="timeline">
@@ -209,11 +229,12 @@ function App() {
         </div>
       </section>
 
-      {/* Developer Signature Section */}
+      {/* Секція прикладів коду (Developer Signature) */}
       <section className="fade-in section-block container">
         <h2 className="section-title"><Layers size={24} /> Developer Signature</h2>
         <div className="signature-grid">
           {resumeData.codeSamples.map((sample, index) => (
+            /* Картка прикладу коду з інтерактивним переглядом */
             <div key={index} className="glass-card code-sample-card">
               <h4>{sample.title}</h4>
               <div className="code-container">
@@ -224,11 +245,12 @@ function App() {
         </div>
       </section>
 
-      {/* Projects Section - Full Width Container */}
+      {/* Секція проектів (Full Width Container) */}
       <section className="fade-in section-block container projects-section">
         <h2 className="section-title"><ExternalLink size={24} /> Projects</h2>
         <div className="projects-grid">
           {resumeData.projects.map((project, index) => (
+            /* Картка проекту з описом та посиланням */
             <div key={index} className="glass-card project-card">
               <h4>{project.name}</h4>
               <p>{project.description}</p>
@@ -238,6 +260,7 @@ function App() {
         </div>
       </section>
 
+      {/* Футер сторінки */}
       <footer className="no-print container">
         <p>© {new Date().getFullYear()} {resumeData.name}. Built with React & TypeScript.</p>
       </footer>
