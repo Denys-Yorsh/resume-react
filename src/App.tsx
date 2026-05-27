@@ -4,7 +4,7 @@ import { useScrollReveal } from './hooks/useScrollReveal';
 import {
   Mail, MapPin, Linkedin, Github,
   Sun, Moon, Download, Briefcase, GraduationCap,
-  ExternalLink, Wrench, Smartphone, Server, Layers, X, Monitor, Cpu
+  ExternalLink, Wrench, Smartphone, Server, Layers, X, Monitor, Cpu, Code2
 } from 'lucide-react';
 import './App.css';
 
@@ -142,7 +142,7 @@ function App() {
         <div className="content-area">
           {/* Секція навичок (4 колонки) */}
           <section className="fade-in section-block">
-            <h2 className="section-title"><Wrench size={24} /> Skills</h2>
+            <h2 className="section-title"><Code2 size={24} /> Skills</h2>
             <div className="skills-grid-4">
               {resumeData.skillCategories.map((category) => (
                 <div key={category.title} className="skill-category-col">
