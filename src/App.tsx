@@ -4,7 +4,7 @@ import { useScrollReveal } from './hooks/useScrollReveal';
 import {
   Mail, MapPin, Linkedin, Github,
   Sun, Moon, Download, Briefcase, GraduationCap,
-  ExternalLink, Wrench, Smartphone, Server, Layers, X, Monitor
+  ExternalLink, Wrench, Smartphone, Server, Layers, X, Monitor, Cpu
 } from 'lucide-react';
 import './App.css';
 
@@ -48,6 +48,7 @@ function App() {
       case 'back-end': return <Server size={18} />;
       case 'mobile': return <Smartphone size={18} />;
       case 'desktop & mobile': return <Monitor size={18} />;
+      case 'tools & others': return <Cpu size={18} />;
       default: return <Wrench size={18} />;
     }
   };
