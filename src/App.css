@@ -279,11 +279,17 @@
   margin-bottom: 0.5rem;
 }
 
-/* Education Grid */
+/* Сітка освіти (2 колонки на великих екранах) */
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+}
+
+@media (max-width: 650px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .education-item h4 {

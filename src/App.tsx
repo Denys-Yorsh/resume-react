@@ -161,43 +161,47 @@ function App() {
               ))}
             </div>
           </section>
-
-          <section className="fade-in section-block">
-            <h2 className="section-title"><GraduationCap size={24} /> Education</h2>
-            <div className="education-grid">
-              {resumeData.education.map((edu: any, index) => (
-                <div key={index} className="glass-card education-item">
-                  <h4>{edu.degree}</h4>
-                  <p className="school-name">{edu.school}</p>
-                  <p className="period-text">{edu.period}</p>
-                  {(edu.sertificate || edu.acreditation) && (
-                    <div className="education-actions no-print">
-                      {edu.sertificate && (
-                        <button 
-                          className="action-btn" 
-                          onClick={() => setActiveCertificate(edu.sertificate)}
-                        >
-                          Sertificate
-                        </button>
-                      )}
-                      {edu.acreditation && (
-                        <a 
-                          href={edu.acreditation} 
-                          target="_blank" 
-                          rel="noreferrer" 
-                          className="action-btn link"
-                        >
-                          Acreditation
-                        </a>
-                      )}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </section>
         </div>
       </main>
+
+      {/* Секція освіти: відображає інформацію про навчальні заклади та отримані сертифікати */}
+      <section className="fade-in section-block container">
+        <h2 className="section-title"><GraduationCap size={24} /> Education</h2>
+        {/* Сітка для карток освіти: 2 колонки на великих екранах */}
+        <div className="education-grid">
+          {resumeData.education.map((edu: any, index) => (
+            /* Картка окремого навчального закладу або курсу */
+            <div key={index} className="glass-card education-item">
+              <h4>{edu.degree}</h4>
+              <p className="school-name">{edu.school}</p>
+              <p className="period-text">{edu.period}</p>
+              {/* Кнопки дій для перегляду сертифікатів або акредитації */}
+              {(edu.sertificate || edu.acreditation) && (
+                <div className="education-actions no-print">
+                  {edu.sertificate && (
+                    <button 
+                      className="action-btn" 
+                      onClick={() => setActiveCertificate(edu.sertificate)}
+                    >
+                      Sertificate
+                    </button>
+                  )}
+                  {edu.acreditation && (
+                    <a 
+                      href={edu.acreditation} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="action-btn link"
+                    >
+                      Acreditation
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Developer Signature Section */}
       <section className="fade-in section-block container">
