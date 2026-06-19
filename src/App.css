@@ -92,6 +92,13 @@
   }
 }
 
+/* Контейнер для підзаголовків (ролей) у шапці профілю, що центрує всі рядки відносно один одного */
+.hero-subtitles {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .subtitle {
   font-size: 1.25rem;
   color: var(--text-secondary);
@@ -179,10 +186,10 @@
   color: var(--text-secondary);
 }
 
-/* Сітка навичок (4 колонки) */
-.skills-grid-4 {
+/* Сітка навичок (3 колонки) */
+.skills-grid-3 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin-bottom: 2rem;
 }
@@ -243,13 +250,13 @@
 }
 
 @media (max-width: 1250px) {
-  .skills-grid-4 {
+  .skills-grid-3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .skills-grid-4 {
+  .skills-grid-3 {
     grid-template-columns: 1fr;
   }
 }

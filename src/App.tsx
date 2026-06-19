@@ -4,7 +4,8 @@ import { useScrollReveal } from './hooks/useScrollReveal';
 import {
   Mail, MapPin, Linkedin, Github,
   Sun, Moon, Download, Briefcase, GraduationCap,
-  ExternalLink, Wrench, Smartphone, Server, Layers, X, Monitor, Cpu, Code2
+  ExternalLink, Wrench, Smartphone, Server, Layers, X, Monitor, Cpu, Code2,
+  BarChart3
 } from 'lucide-react';
 import './App.css';
 
@@ -61,11 +62,12 @@ function App() {
    */
   const getIcon = (title: string) => {
     switch (title.toLowerCase()) {
-      case 'front-end': return <Layers size={18} />;
-      case 'back-end': return <Server size={18} />;
-      case 'mobile': return <Smartphone size={18} />;
-      case 'desktop & mobile': return <Monitor size={18} />;
-      case 'tools & others': return <Cpu size={18} />;
+      case 'front-end': return <Layers size={22} />;
+      case 'back-end': return <Server size={22} />;
+      case 'mobile': return <Smartphone size={22} />;
+      case 'desktop': return <Monitor size={22} />;
+      case 'tools & others': return <Cpu size={22} />;
+      case 'bi & analytics': return <BarChart3 size={22} />;
       default: return <Wrench size={18} />;
     }
   };
@@ -107,8 +109,17 @@ function App() {
             </div>
           )}
           <div className="hero-text">
+            {/* Основне ім'я розробника, відображається великим шрифтом у шапці профілю (Hero section) */}
             <h1>{resumeData.name}</h1>
-            <p className="subtitle">{resumeData.role}</p>
+            {/* Контейнер для підзаголовків (ролей) розробника, що центрує всі три рядки відносно один одного */}
+            <div className="hero-subtitles">
+              {/* Перший рядок посади розробника, виступає в ролі основного підзаголовка у шапці профілю */}
+              <p className="subtitle">{resumeData.role}</p>
+              {/* Другий рядок посади розробника, що відображає допоміжний роздільник у шапці профілю */}
+              {resumeData.roleLine2 && <p className="subtitle">{resumeData.roleLine2}</p>}
+              {/* Третій рядок посади розробника, що вказує додаткову спеціалізацію у шапці профілю */}
+              {resumeData.roleLine3 && <p className="subtitle">{resumeData.roleLine3}</p>}
+            </div>
           </div>
         </div>
       </header>
@@ -140,10 +151,10 @@ function App() {
 
         {/* Основна область контенту (Навички та Досвід) */}
         <div className="content-area">
-          {/* Секція навичок (4 колонки) */}
+          {/* Секція навичок (3 колонки) */}
           <section className="fade-in section-block">
             <h2 className="section-title"><Code2 size={24} /> Skills</h2>
-            <div className="skills-grid-4">
+            <div className="skills-grid-3">
               {resumeData.skillCategories.map((category) => (
                 <div key={category.title} className="skill-category-col">
                   <div className="category-header">

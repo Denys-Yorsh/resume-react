@@ -4,6 +4,10 @@
 export const resumeData = {
   name: "Denys Yorsh",
   role: "Full Stack Developer",
+  /* Додаткова інформація про роль (другий рядок) */
+  roleLine2: "&",
+  /* Спеціалізація або додаткова роль (третій рядок) */
+  roleLine3: "Power BI Data Analyst",
   photo: "/image_me.jpeg",
   /* Контактна інформація */
   contact: {
@@ -16,11 +20,11 @@ export const resumeData = {
   },
 
   /* Коротке резюме про розробника */
-  summary: `I am a practicing fullstack developer with experience across a wide range of technologies. I work with React, Angular, JavaScript, Node.js, and Vite, and also have experience with C++, Java, Python, Swift, and Kotlin, among others.
+  summary: `I am a Full Stack Developer and Power BI Data Analyst dedicated to driving digital transformation by bridging the gap between software engineering and data science. With a broad technical background, I specialize in building robust applications while seamlessly integrating modern analytics into existing infrastructures to unlock the true value of operational data.
 
-  I understand the full software development lifecycle, from building user interfaces and backend logic to working with algorithms and cross-platform solutions. I am experienced with Git, application architecture, and delivering complete working projects.
+  My expertise spans the entire development and data lifecycle, from designing responsive user interfaces to optimizing backend logic and managing complex SQL/NoSQL databases. Having experience with multiple programming languages, frameworks, and environments, I build scalable systems that ensure data is captured accurately, stored securely, and processed efficiently.
 
-  I focus on clean code, performance, and practical implementation of real-world solutions.`,
+  Focused on practical, real-world impact, I leverage Power BI to transform messy datasets into clear, interactive executive dashboards. By setting up automated data collection workflows and advanced modeling, I help organizations eliminate manual reporting, optimize internal workflows, and make critical decisions based on real-time insights.`,
 
   /* Категорії навичок */
   skillCategories: [
@@ -45,10 +49,26 @@ export const resumeData = {
       ]
     },
     {
-      title: "Desktop & Mobile",
+      title: "BI & Analytics",
+      skills: [
+        { name: "Power BI / DAX", level: 85 },
+        { name: "Power Query / M Language", level: 85 },
+        { name: "Data Modeling / ETL Processes", level: 80 },
+        { name: "Advanced SQL / Window Functions", level: 90 },
+        { name: "Python (Pandas / NumPy / Matplotlib / Seaborn)", level: 80 },
+        { name: "Data Visualization / Dashboards", level: 85 }
+      ]
+    },
+    {
+      title: "Desktop",
       skills: [
         { name: "C / C++ / Qt", level: 80 },
-        { name: "C# (.NET) / WPF / Avalonia", level: 75 },
+        { name: "C# (.NET) / WPF / Avalonia", level: 75 }
+      ]
+    },
+    {
+      title: "Mobile",
+      skills: [
         { name: "Swift / UIKit / SwiftUI", level: 70 },
         { name: "Kotlin / Jetpack Compose", level: 65 },
         { name: "Mobile Design Patterns", level: 75 }
@@ -61,8 +81,6 @@ export const resumeData = {
         { name: "BASH / Docker / Git", level: 80 },
         { name: "MySQL / SQLite / H2 Database", level: 85 },
         { name: "PostgreSQL / MongoDB", level: 85 },
-        { name: "Maven / WebPack", level: 80 },
-        { name: "Figma / Postman", level: 85 },
         { name: "English — B1", level: 100 }
       ]
     }
@@ -93,7 +111,35 @@ export const resumeData = {
   education: [
     {
       school: "Corsera",
-      degree: "Google AI Professional Certificate x UVF",
+      degree: "Microsoft Power BI Data Analyst Professional Certificate",
+      period: "Jun 2026",
+      sertificate: "/public/microsoft_power_bi_data_analyst_professional_certificate.jpg",
+      acreditation: "https://www.coursera.org/account/accomplishments/specialization/8YUIBFH3XHFJ",
+    },
+    {
+      school: "Corsera",
+      degree: "Google Business Intelligence Professional Certificate",
+      period: "Jun 2026",
+      sertificate: "/public/google_business_intelligence_professional_certificate.jpg",
+      acreditation: "https://www.coursera.org/account/accomplishments/specialization/UEV6NNAZO14F",
+    },
+    {
+      school: "Corsera",
+      degree: "Google Advanced Data Analytics Professional Certificate",
+      period: "Jun 2026",
+      sertificate: "/public/google_advanced_data_analytics_professional_certificate.jpg",
+      acreditation: "https://www.coursera.org/account/accomplishments/specialization/70H727KSJPA0",
+    },
+    {
+      school: "Corsera",
+      degree: "Google Data Analytics Professional Certificate",
+      period: "Jun 2026",
+      sertificate: "/public/google_data_analytics_professional_certificate.jpg",
+      acreditation: "https://www.coursera.org/account/accomplishments/specialization/NCXBTO2WTO2S",
+    },
+    {
+      school: "Corsera",
+      degree: "Google AI Professional Certificate",
       period: "May 2026",
       sertificate: "/public/google_ai_professional_certificate.png",
       acreditation: "https://www.coursera.org/account/accomplishments/specialization/XJY3YQKSE4KT",
