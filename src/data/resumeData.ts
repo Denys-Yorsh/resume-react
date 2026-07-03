@@ -111,6 +111,20 @@ export const resumeData = {
   education: [
     {
       school: "Corsera",
+      degree: "IBM Data Engineering Professional Certificate",
+      period: "Jul 2026",
+      sertificate: "/public/ibm_data_engineering_professional_certificate.jpg",
+      acreditation: "https://www.coursera.org/account/accomplishments/professional-cert/SPJWA7NI13YV",
+    },
+    {
+      school: "Corsera",
+      degree: "IBM Data Science Professional Certificate",
+      period: "Jul 2026",
+      sertificate: "/public/ibm_data_science_professional_certificate.jpg",
+      acreditation: "https://www.coursera.org/account/accomplishments/specialization/HIFA3DO84Q73",
+    },
+    {
+      school: "Corsera",
       degree: "Microsoft Power BI Data Analyst Professional Certificate",
       period: "Jun 2026",
       sertificate: "/public/microsoft_power_bi_data_analyst_professional_certificate.jpg",
