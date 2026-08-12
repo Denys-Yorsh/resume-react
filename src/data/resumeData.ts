@@ -43,7 +43,7 @@ export const resumeData = {
         { name: "Java / Spring Boot", level: 85 },
         { name: "REST API / Hibernate / JPA", level: 85 },
         { name: "Node.js / Nest.js / Express.js", level: 80 },
-        { name: "Python / PHP", level: 75 },
+        { name: "Python / (NumPy / .....)", level: 75 },
         { name: "SQL / JPQL / NoSQL", level: 85 },
         { name: "OOP / SOLID / ACID", level: 85 }
       ]
@@ -55,7 +55,7 @@ export const resumeData = {
         { name: "Power Query / M Language", level: 85 },
         { name: "Data Modeling / ETL Processes", level: 80 },
         { name: "Advanced SQL / Window Functions", level: 90 },
-        { name: "Python (Pandas / NumPy / Matplotlib / Seaborn)", level: 80 },
+        { name: "Python (Pandas / NumPy / Matplotlib / .....)", level: 80 },
         { name: "Data Visualization / Dashboards", level: 85 }
       ]
     },
@@ -77,7 +77,7 @@ export const resumeData = {
     {
       title: "Tools & Others",
       skills: [
-        { name: "ChatGPT / Gemini", level: 90 },
+        { name: "ChatGPT / Gemini / Copilot", level: 90 },
         { name: "BASH / Docker / Git", level: 80 },
         { name: "MySQL / SQLite / H2 Database", level: 85 },
         { name: "PostgreSQL / MongoDB", level: 85 },
@@ -109,6 +109,34 @@ export const resumeData = {
   
   /* Освіта та сертифікати */
   education: [
+    {
+      school: "Corsera",
+      degree: "IBM DevOps and Software Engineering Professional Certificate",
+      period: "August 2026",
+      sertificate: "/public/ibm_devOps_and_software_engineering_professional_certificate.jpg",
+      acreditation: "https://www.coursera.org/account/accomplishments/specialization/Z2RKLQI0RZWQ",
+    },
+    {
+      school: "Corsera",
+      degree: "Microsoft Introduction to C++ programming Professional Certificate",
+      period: "August 2026",
+      sertificate: "/public/microsoft_introduction_to_c++_programming_professional_certificate.jpg",
+      acreditation: "https://www.coursera.org/account/accomplishments/specialization/M8QGW8IU92K2",
+    },
+    {
+      school: "Corsera",
+      degree: "Microsoft Full-Stack Developer Professional Certificate",
+      period: "August 2026",
+      sertificate: "/public/microsoft_full-stack_developer_professional_certificate.jpg",
+      acreditation: "https://www.coursera.org/account/accomplishments/specialization/S64NODHMMMSR",
+    },
+    {
+      school: "Corsera",
+      degree: "IBM Machine Learning Professional Certificate",
+      period: "Jul 2026",
+      sertificate: "/public/ibm_machine_learning_professional_certificate.jpg",
+      acreditation: "https://www.coursera.org/account/accomplishments/specialization/Z5W7RHGTHS0Z",
+    },
     {
       school: "Corsera",
       degree: "IBM Data Engineering Professional Certificate",
