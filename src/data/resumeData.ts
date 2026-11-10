@@ -213,7 +213,7 @@ export const resumeData = {
       link: "https://github.com/Denys-Yorsh/resume-react",
     },
     {
-      name: "Duty Schedule (C++)",
+      name: "Duty Manager (C++)",
       description: "Developed a C++ application for automating the creation and management of duty schedules in a military unit of the Armed Forces of Ukraine (AFU).",
       link: "https://github.com/Denys-Yorsh/duty-manager",
     },
