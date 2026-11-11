@@ -110,6 +110,13 @@ export const resumeData = {
   /* Освіта та сертифікати */
   education: [
     {
+      school: "Google",
+      degree: "Google AI For Business 2.0",
+      period: "November 2026",
+      sertificate: "/public/google_ai_for_business_2.0.jpg",
+      acreditation: "https://google.ederalms.com/uk/verifycertificate/?uuid=fec84883-c6b6-4111-a11d-b18cd545cf86",
+    },
+    {
       school: "Corsera",
       degree: "IBM DevOps and Software Engineering Professional Certificate",
       period: "August 2026",
